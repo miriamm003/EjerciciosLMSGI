@@ -1,0 +1,63 @@
+<musica>
+    <artistas>
+        <artista>
+            <nombre> RVFV </nombre>
+            <fecha> 24 de abril 2001</fecha>
+            <nacionalidad> España </nacionalidad>
+        </artista>
+        <artista>
+            <nombre> Vanesa Martin </nombre>
+            <fecha> 14 de noviembre 1980</fecha>
+            <nacionalidad> España </nacionalidad>
+        </artista>
+
+        <artista>
+            <nombre> Annuel AA </nombre>
+            <fecha> 26 de noviembre 1992</fecha>
+            <nacionalidad> Puerto Rico </nacionalidad>
+        </artista>
+        
+    </artistas>
+
+    <canciones>
+        <cancion>
+            <nombre>Yo no se</nombre>
+            <duracion> 3 minutos</duracion>
+            <artista> RVFV </artista>
+        </cancion>
+
+       
+
+    
+
+
+
+    </canciones>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</musica>
