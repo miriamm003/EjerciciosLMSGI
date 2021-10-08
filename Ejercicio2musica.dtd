@@ -1,16 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!ELEMENT musica (artistas, canciones, nacionalidad)*>
+<!ELEMENT musica (artistas, canciones, nacionalidades)*>
 
-<!ELEMENT artistas (nombre, fecha, nacionalidad)*>
-<!ELEMENT nombre (#PCDATA)>
-<!ELEMENT fecha (#PCDATA)>
-<!ELEMENT nacionalidad (#PCDATA)>
+<!ELEMENT artistas (artista)*>
+<!ELEMENT canciones (cancion)*>
+<!ELEMENT nacionalidades (nacionalidad)*>
 
-<!ELEMENT canciones (nombre, duración, artista)*>
-<!ELEMENT nombre (#PCDATA)>
-<!ELEMENT duración (#PCDATA)>
-<!ELEMENT artista (#PCDATA)>
+<!ELEMENT artista (#PCDATA)*>
+<!ELEMENT cancion (#PCDATA)*>
+<!ELEMENT nacionalidad (#PCDATA)*>
 
-<!ELEMENT nacionalidades (nombre, código)*>
-<!ELEMENT nombre (#PCDATA)>
-<!ELEMENT código (#PCDATA)>
+<!ATTLIST artista nombre ID #REQUIRED
+                    fecha CDATA #REQUIRED 
+                    nacionalidad IDREF #REQUIRED>
+
+<!ATTLIST cancion nombre ID #REQUIRED
+                    duracion CDATA #REQUIRED
+                    artista IDREF #REQUIRED>
+
+<!ATTLIST nacionalidad nombre ID #REQUIRED
+                    codigo ID #REQUIRED>
