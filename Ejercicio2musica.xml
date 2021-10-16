@@ -1,0 +1,17 @@
+<musica>
+    <artistas>
+        <artista nombre="RVFV" fecha="19 noviembre" nacionalidad="España" />
+        <artista nombre="Vanesa Martin" fecha="8 agosto" nacionalidad="España" />
+        <artista nombre="Anuel AA" fecha="5 noviembre" nacionalidad="Puerto Rico" />
+    </artistas>
+    <canciones>
+        <cancion nombre="Yo no se" duracion="5 min" artista="RVFV"/>
+        <cancion nombre="9 dias" duracion="3:20 min" artista="Vanesa Martin"/>
+        <cancion nombre="Nunca" duracion="4:30 min" artista="Annuel AA"/>
+    </canciones>
+    <nacionalidades>
+        <nacionalidad codigo= "15200" nombre= "espanola"/>
+        <nacionalidad codigo= "16582" nombre= "espanola"/>
+        <nacionalidad codigo= "25420" nombre= "puertorico"/>
+    </nacionalidades>
+</musica>
