@@ -1,0 +1,20 @@
+<dragonball>
+    <personajes> 
+        <personaje nombre="Son Goku" fechanacimiento="30enero" edad="25"/>
+        <personaje nombre="Bulma" fechanacimiento="25marzo" edad="18"/>
+        <personaje nombre="Freezer" fechanacimiento="26septiembre" edad="20"/>
+     </personajes>
+
+     <creadores>
+        <creador nombre="Akira Toriyama" fechacreacion="18agosto" personaje="Son Goku"/>
+        <creador nombre="Trunks" fechacreacion="20octubre" personaje="Bulma"/>
+        <creador nombre="Bra" fechacreacion="15julio" personaje="Freezer"/>
+    </creadores>
+
+    <familiares>
+        <familia padre="Bardock" madre="Gine"  personaje="Son Goku"/>
+        <familia padre="Dr.Brief" madre="Sra.Brief" hermana="Tights" personaje="Bulma"/>
+        <familia padre="King Cold" madre="Kuriza" hermana="Cooler" personaje="Freezer"/>
+    </familiares>
+    
+</dragonball>

@@ -1,15 +1,40 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE Animales [
-
-
-
-
-
-
-
-
-
-
-
-
+<!DOCTYPE animales [
+    <!ELEMENT animales (animal)*>
+    <!ELEMENT animal (pajaro,tortuga,gato)*>
+    <!ELEMENT pajaro (especie, nombre, fechanacimiento)*>
+    <!ELEMENT especie (#PCDATA)>
+    <!ELEMENT nombre (#PCDATA)>
+    <!ELEMENT fechanacimiento (#PCDATA)>
+    <!ATTLIST pajaro
+        especie ID #REQUIRED
+        nombre CDATA #IMPLIED
+        fechanacimiento CDATA #FIXED "1950"
+    >
+    <!ELEMENT tortuga (habitat | comida)?>
+    <!ELEMENT habitat (#PCDATA)>
+    <!ELEMENT comida EMPTY>
+    <!ATTLIST tortuga
+        habitat ID #REQUIRED
+        comida CDATA #IMPLIED
+    >
+    <!ELEMENT gato (color)*>
+    <!ELEMENT color (#PCDATA)>
+    <!ATTLIST gato color ID #REQUIRED>
 ]>
+
+
+<animales>
+    <animal>
+        <pajaro especie="Hola" nombre="adios" fechanacimiento="1950"></pajaro>
+
+
+        <tortuga habitat="europa" comida="..." />
+
+        <gato color="negro" />
+
+
+    </animal>
+
+
+</animales>
