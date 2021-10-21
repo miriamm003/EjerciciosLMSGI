@@ -1,2 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!ELEMENT 
+<!ELEMENT dragonBall (personajes, creadores+, familiares?)*>
+
+<!ELEMENT personajes (personaje)*>
+<!ELEMENT creadores (creador)*>
+<!ELEMENT familiares (familia)*>
+
+<!ELEMENT personaje (#PCDATA)>
+<!ELEMENT creador (EMPTY)>
+<!ELEMENT familia (#PCDATA)>
+
+<!ENTITY % comunes "nombre ID #REQUIRED"> 
+<!ENTITY % iguales "personaje IDREF">
+
+<!ATTLIST personaje %comunes;>
+<!ATTLIST personaje 
+                    fechanacimiento CDATA #REQUIRED> 
+
+<!ATTLIST creador %comunes;>
+<!ATTLIST creador %iguales;>
+<!ATTLIST creador
+                    fechacreacion CDATA #REQUIRED
+                    nombre IDREF #REQUIRED>
+
+<!ATTLIST familia %iguales;>
+<!ATTLIST familia padre CDATA #IMPLIED
+                    madre CDATA #IMPLIED
+                    hermana CDATA #IMPLIED
+                    
