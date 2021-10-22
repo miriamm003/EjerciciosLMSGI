@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE Dragonball SYSTEM "Dragonball.dtd">
+<!DOCTYPE dragonball SYSTEM "Dragonball.dtd">
 
 <dragonball> Los personajes, creadores y familiares
     <personajes> 
-        <personaje nombre="Son Goku" fechanacimiento="30enero" edad="25" vida="vivo">Son goku</personaje>
-        <personaje nombre="Bulma" fechanacimiento="25marzo" edad="18" vida="vivo"/>
-        <personaje nombre="Freezer" fechanacimiento="26septiembre" edad="20" vida="vivo"> Freezer</personaje>
+        <personaje nombre="SonGoku" fechanacimiento="30enero" edad="28" vida="vivo">Son goku</personaje>
+        <personaje nombre="Bulma" fechanacimiento="25marzo" edad="28" vida="vivo"/>
+        <personaje nombre="Freezer" fechanacimiento="26septiembre" edad="28" vida="vivo"> Freezer</personaje>
      </personajes>
 
      <creadores>
-        <creador nombre="Akira Toriyama" fechacreacion="18agosto" personaje="Son Goku"/>
+        <creador nombre="AkiraToriyama" personajeFavorito="Bra" personajesCreados="SonGoku Bulma Freezer" fechacreacion="18agosto" personaje="SonGoku"/>
         <creador nombre="Trunks" fechacreacion="20octubre" personaje="Bulma"/>
         <creador nombre="Bra" fechacreacion="15julio" personaje="Freezer"/>
     </creadores>
 
     <familiares>
-        <familia padre="Bardock" madre="Gine"  personaje="Son Goku"/>
+        <familia padre="Bardock" madre="Gine"  personaje="SonGoku"/>
         <familia padre="Dr.Brief" madre="Sra.Brief" hermana="Tights" personaje="Bulma"/>
         <familia padre="King Cold" madre="Kuriza" hermana="Cooler" personaje="Freezer"/>
     </familiares>
