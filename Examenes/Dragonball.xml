@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE Dragonball SYSTEM "Dragonball.dtd">
 
-<dragonball>
+<dragonball> Los personajes, creadores y familiares
     <personajes> 
-        <personaje nombre="Son Goku" fechanacimiento="30enero" edad="25">Son goku</personaje>
-        <personaje nombre="Bulma" fechanacimiento="25marzo" edad="18"/>
-        <personaje nombre="Freezer" fechanacimiento="26septiembre" edad="20"> Freezer</personaje>
+        <personaje nombre="Son Goku" fechanacimiento="30enero" edad="25" vida="vivo">Son goku</personaje>
+        <personaje nombre="Bulma" fechanacimiento="25marzo" edad="18" vida="vivo"/>
+        <personaje nombre="Freezer" fechanacimiento="26septiembre" edad="20" vida="vivo"> Freezer</personaje>
      </personajes>
 
      <creadores>

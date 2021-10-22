@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!ELEMENT dragonBall (personajes, creadores+, familiares?)*>
+<!ELEMENT dragonBall (#PCDATA | personajes | creadores | familiares)*>
 
-<!ELEMENT personajes (personaje)*>
-<!ELEMENT creadores (creador)*>
-<!ELEMENT familiares (familia)*>
+<!ELEMENT personajes (personaje*)>
+<!ELEMENT creadores (creador+)*>
+<!ELEMENT familiares (familia?)*>
 
 <!ELEMENT personaje (#PCDATA)>
 <!ELEMENT creador EMPTY>
@@ -13,7 +13,7 @@
 <!ENTITY % iguales "personaje IDREF ">
 
 <!ATTLIST personaje %comunes;>
-<!ATTLIST personaje 
+<!ATTLIST personaje vida (vivo | muerto) "vivo"
                     fechanacimiento CDATA #REQUIRED
                     edad CDATA #FIXED "28">
 
