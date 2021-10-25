@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!ELEMENT placabase (microprocesador, memoria, modelo, fabricante)>
-<!ELEMENT microprocesador (#PCDATA)>
-<!ELEMENT memoria (#PCDATA)>
-<!ELEMENT modelo (#PCDATA)>
-<!ELEMENT fabricante (Asus, Intel)>
-<!ELEMENT Asus (EMPTY)>
-<!ELEMENT Intel (EMPTY)>
