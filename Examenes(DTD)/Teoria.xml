@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!ELEMENT>
+    ANY (permite cualquier cosa dentro del elemento) 
+    EMPTY (elemento vacio)
+    #PCDATA (permite cualquier cosa dentro del elemento y puede haber caracteres) 
+
+    CARDINALIDADES: 
+    ?- puede aparecer de 0 a 1 vez 
+    *- de 0 a ilimitadas veces 
+    +- de 1 a ilimitadas veces 
+    | elemento exclusion es decir, puede aparecer uno u otro 
+
+<!ATTLIST>
+    #IMPLIED - atributo opcional 
+    #REQUIRED - atributo obligatorio 
+    #FIXED - atributo obligatorio con un valor determinado 
+
+    Valores para atrbuto: 
+    CDATA
+    ENTITY (una entidad)
+    ENTITIES (lista de nombres de entidades)
+    ID (identificador único)
+    IDREF (una referencia)
+    IDREFS (varias referencias)
+    NMTOKENS (lista de nombres con espacios en su interior)
+    NMTOKEN (nombre sin espacios)
